@@ -22,7 +22,7 @@ jobs:
           coverage: none
 
       - name: Install Composer Dependencies
-        run: composer install --no-interaction -prefer0dist --optimixe-autoloader
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
       - name: Copy environment file
         run: cp .env.example .env
